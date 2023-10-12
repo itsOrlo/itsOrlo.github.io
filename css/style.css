@@ -10100,3 +10100,14 @@ h6,
     height:30vh;
   }
 }
+
+/* ws */
+.whatsapp {
+  display: none;
+  position: fixed;
+  right: 45px;
+  bottom: 150px;
+  z-index: 11;
+  border-radius: 50%;
+  animation: bounce 0.3s infinite alternate; /* Aplica la animación "bounce" al contenedor */
+}
