@@ -9782,6 +9782,16 @@ h6,
   z-index: 11;
   animation: action 1s infinite alternate;
 }
+.go-to-wsp {
+  position: fixed;
+  display: none;
+  width: 50px;
+  text-align: center;
+  right: 20px;
+  bottom: 80px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
 
 @keyframes action {
   0% {
@@ -10099,15 +10109,8 @@ h6,
   .content {
     height:30vh;
   }
+
+  
+
 }
 
-/* ws */
-.whatsapp {
-  display: none;
-  position: fixed;
-  right: 45px;
-  bottom: 150px;
-  z-index: 11;
-  border-radius: 50%;
-  animation: bounce 0.3s infinite alternate; /* Aplica la animación "bounce" al contenedor */
-}

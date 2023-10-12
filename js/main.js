@@ -99,11 +99,17 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('.back-to-top').fadeIn('slow');
+            $('.go-to-wsp').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
+            $('.go-to-wsp').fadeOut('slow');
         }
     });
     $('.back-to-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        return false;
+    });
+    $('.go-to-wsp').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
