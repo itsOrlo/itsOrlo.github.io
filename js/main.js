@@ -157,7 +157,7 @@
             title: "¡Enviado! :D",
             text: "Pronto me pondré en contacto contigo",
             type: "success",
-            timer: 1000,  // Cambia este valor al tiempo que desees en milisegundos (ejemplo: 5000 para 5 segundos)
+            timer: 1000, 
             showConfirmButton: false
         }).then(function () {
             window.location.href = "https://itsorlo.me/";
