@@ -157,9 +157,9 @@
             title: "¡Enviado! :D",
             text: "Pronto me pondré en contacto contigo",
             type: "success",
-            timer: 500,
+            timer: 1000, 
             showConfirmButton: false
-        }, function () {
+        }).then(function () {
             window.location.href = "https://itsorlo.me/";
         });
     }
