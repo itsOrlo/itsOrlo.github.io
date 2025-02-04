@@ -29,6 +29,15 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .skill-image {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .skill-image:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <nav
@@ -52,7 +61,6 @@
           <a href="#skill" class="nav-item nav-link">Skills</a>
           <a href="#service" class="nav-item nav-link">Servicios</a>
           <a href="#portfolio" class="nav-item nav-link">Proyectos</a>
-          <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
         <a
           href="https://wa.link/w7o5tb"
@@ -62,38 +70,6 @@
         </a>
       </div>
     </nav>
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="#"
-                id="video"
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div
       class="container-fluid bg-primary d-flex align-items-center py-5"
       id="home"
@@ -122,20 +98,6 @@
             <div
               class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
             >
-              <button
-                type="button"
-                class="btn-play"
-                data-toggle="modal"
-                data-src="https://www.youtube.com/embed/MW3RffnSqxg"
-                data-target="#videoModal"
-              >
-                <span></span>
-              </button>
-              <h5
-                class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block"
-              >
-                Play Video
-              </h5>
             </div>
           </div>
         </div>
@@ -206,7 +168,7 @@
               Soy un Ingeniero en Tecnologías de la Información especializado en
               análisis de datos y desarrollo web. Me apasiona transformar datos en información valiosa
               para la toma de decisiones estratégicas. Tengo experiencia en herramientas
-              como Python, R, SQL, Power BI y Tableau. Además, tengo habilidades en desarrollo web
+              como Python, Power Query, SQL, Power BI y Tableau. Además, tengo habilidades en desarrollo web
               utilizando HTML, CSS, JavaScript y frameworks como React y Vue. Mi objetivo es ayudar a las empresas
               a optimizar sus procesos y mejorar su rendimiento mediante el uso de datos y soluciones tecnológicas.
             </p>
@@ -227,7 +189,7 @@
               </div>
               <div class="col-sm-6 py-2">
                 <h6>
-                  Experiencia: <span class="text-secondary">+4 Años</span>
+                  Experiencia: <span class="text-secondary">+3 Años</span>
                 </h6>
               </div>
               <div class="col-sm-6 py-2">
@@ -246,11 +208,7 @@
                   Dirección: <span class="text-secondary">Imbabura, EC</span>
                 </h6>
               </div>
-              <div class="col-sm-6 py-2">
-                <h6>
-                  Freelance: <span class="text-secondary">Disponible</span>
-                </h6>
-              </div>
+              
             </div>
             <a
               href="https://drive.google.com/drive/folders/1w__2pMRA0l5mzs-0C-bje-dTQimtPdSq?usp=sharing"
@@ -259,7 +217,7 @@
               ><i class="fa-solid fa-graduation-cap"></i> Certificaciones</a
             >
             <a
-              href="img/Curriculum_Montesdeoca.pdf"
+              href="img/CV_Orlidan_Montesdeoca.pdf"
               target="_blank"
               class="btn btn-outline-primary"
               ><i class="fa-solid fa-file-pdf"></i> Descargar CV</a
@@ -285,7 +243,7 @@
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="mb-4">Linea académica</h3>
+            <h3 class="mb-4">Línea académica</h3>
             <div class="border-left border-primary pt-2 pl-4 ml-2">
               <div class="position-relative mb-4">
                 <i
@@ -300,9 +258,9 @@
                   <small>2020 - 2024</small>
                 </p>
                 <p>
-                  Formación en auditoría de sistemas, gestión de TI y seguridad
-                  informática. Adquirí conocimientos en redes, bases de datos,
-                  ciberseguridad y desarrollo de software.
+                  Formación en aprendizaje automático, visualización, transformación y modelado de datos. 
+                  Experiencia en el uso de Python y manejo de Big Data para resolver problemas complejos 
+                  y mejorar la toma de decisiones.
                 </p>
               </div>
               <div class="position-relative mb-4">
@@ -314,13 +272,11 @@
                   Certificación Internacional Oracle Cloud Data Management
                 </h5>
                 <p class="mb-2">
-                  <strong>Oracle</strong> |
-                  <small>2024</small>
+                  <strong>Oracle</strong> | <small>2024</small>
                 </p>
                 <p>
                   Conocimientos en gestión y administración de datos en la nube.
-                  Experiencia en migración y seguridad de datos en entornos
-                  cloud.
+                  Experiencia en migración y seguridad de datos en entornos cloud.
                 </p>
               </div>
               <div class="position-relative mb-4">
@@ -330,13 +286,11 @@
                 ></i>
                 <h5 class="font-weight-bold mb-1">Certificación Google</h5>
                 <p class="mb-2">
-                  <strong>The Open University</strong> |
-                  <small>2020 - 2023</small>
+                  <strong>The Open University</strong> | <small>2020 - 2023</small>
                 </p>
                 <p>
-                  Desarrollo web front-end con HTML, CSS y JavaScript.
-                  Fundamentos de marketing digital y SEO. Conceptos de Cloud
-                  Computing.
+                  Desarrollo web front-end con HTML, CSS y JavaScript. Fundamentos de
+                  marketing digital y SEO. Conceptos de Cloud Computing.
                 </p>
               </div>
               <div class="position-relative mb-4">
@@ -346,13 +300,13 @@
                 ></i>
                 <h5 class="font-weight-bold mb-1">Formación Virtual</h5>
                 <p class="mb-2">
-                  <strong>Coursera &amp; Udemy</strong> |
-                  <small>2022 - Presente</small>
+                  <strong>Coursera &amp; Udemy</strong> | <small>2022 - Presente</small>
                 </p>
                 <p>
-                  Desarrollo de aplicaciones web con frameworks como React y
-                  Vue. LMS WordPress. Automatización de tareas con Python.
-                  Trabajo en equipo, gestión de proyectos y Liderazgo TI.
+                  Cursos especializados en análisis de datos y visualización con Power BI.
+                  Desarrollo de aplicaciones web con frameworks como React y Vue.
+                  Automatización de tareas con Python. Trabajo en equipo, gestión de
+                  proyectos y Liderazgo TI.
                 </p>
               </div>
             </div>
@@ -367,46 +321,15 @@
                 ></i>
                 <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
                 <p class="mb-2">
-                  <strong>VReech Academy</strong> | <small>2020 - 2021</small>
+                  <strong>WebCats</strong> | <small>Jun 2022 - Ene 2024</small>
                 </p>
-                <p>
-                  Estratega en planes de marketing de crecimiento por redes
-                  sociales y página web, creador de contenido digital y gestión
-                  de comunidades. Diseño y mantenimiento del sitio web, manejo
-                  de rendimiento y SEO.
-                </p>
-              </div>
-              <div class="position-relative mb-4">
-                <i
-                  class="far fa-dot-circle text-primary position-absolute"
-                  style="top: 2px; left: -32px"
-                ></i>
-                <h5 class="font-weight-bold mb-1">
-                  Asistente de Telecomunicaciones
-                </h5>
-                <p class="mb-2">
-                  <strong>Uboratech</strong> | <small>2022 - 2023</small>
-                </p>
-                <p>
-                  Soporte técnico y mantenimiento a equipos de red, manejo de
-                  sistemas operativos, hardware de red y software de monitoreo.
-                  Gestión de plataformas de aprendizaje en línea (LMS) WordPress
-                  y Moodle.
-                </p>
-              </div>
-              <div class="position-relative mb-4">
-                <i
-                  class="far fa-dot-circle text-primary position-absolute"
-                  style="top: 2px; left: -32px"
-                ></i>
-                <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
-                <p class="mb-2">
-                  <strong>WebCats</strong> | <small>2021 - Presente</small>
-                </p>
-                <p>
-                  Grupo freelance dedicado a la implementación de sistemas y
-                  construcción de sitios web.
-                </p>
+                <ul>
+                  <li>Implementación de sistemas web utilizando Python, Django y PostgreSQL.</li>
+                  <li>Desarrollo de sistemas interactivos de visualización de datos con Tableau.</li>
+                  <li>Creación de dashboards en Tableau para toma de decisiones de la compañía.</li>
+                  <li>Uso de Spyder como entorno de desarrollo para el análisis de datos, prototipado y desarrollo de modelos de machine learning.</li>
+                  <li>Desarrollo de modelos de datos para análisis predictivo con regresión lineal.</li>
+                </ul>
               </div>
               <div class="position-relative mb-4">
                 <i
@@ -415,16 +338,16 @@
                 ></i>
                 <h5 class="font-weight-bold mb-1">Auxiliar de Auditoría</h5>
                 <p class="mb-2">
-                  <strong>Banco VisionFund</strong> |
-                  <small>2024 - Presente</small>
+                  <strong>Banco VisionFund</strong> | <small>Oct 2024 - Presente</small>
                 </p>
-                <p>
-                  Análisis de datos y documentación de auditorías internas.
-                  Automatización de procesos con IDEA y ACL.
-                  Implementación de medidas de seguridad y cumplimiento normativo.
-                  Análisis de riesgos y desarrollo de soluciones para mejorar la
-                  eficiencia operativa.
-                </p>
+                <ul>
+                  <li>Análisis continuo de cartera e información de clientes, asegurando el cumplimiento del manual de crédito y detectando inconsistencias con software IDEA.</li>
+                  <li>Automatización de cálculos, generación de reportes y limpieza de datos con VBA en Excel.</li>
+                  <li>Desarrollo de dashboards para seguimiento de observaciones de auditoría en Power BI.</li>
+                  <li>Manejo de Dax para la creación de medidas y análisis en Power BI.</li>
+                  <li>Limpieza y transformación de datos con Power Query en Excel y Power BI.</li>
+                  <li>Diseño y creación de modelos relacionales en Power BI, empleando el editor de modelos, para análisis y reporting efectivo de datos.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -446,122 +369,48 @@
             Habilidades
           </h1>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Desarrollo Web</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-html"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">PostgreSQL</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-css"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Tableau</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-php"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">MySQL</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-mysql"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
+        <div class="row text-center">
+          <div class="col-md-3 mb-4 mt-3">
+            <i class="fa-4x mb-2">
+              <img src="img/caseware-idea.webp" class="skill-image" style="height: 120px; width: auto;" alt="Power Query" />
+            </i>
           </div>
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Power BI</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-js"
-                  role="progressbar"
-                  aria-valuenow="78"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Python</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-python"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Ofimática</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-wp"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Node JS, React & Vue</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar pb-react"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/OIP.jpg" class="skill-image" style="height: 150px; width: auto;" alt="Power Query" />
+            </i>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/tableau.jpg" class="skill-image" style="height: 120px; width: auto;" alt="Power Query" />
+            </i>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/mysql_logo-min.jpg" class="skill-image" style="height: 150px; width: auto;" alt="Power Query" />
+            </i>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/powerBI.png" class="skill-image" style="height: 120px; width: auto;" alt="Power Query" />
+            </i>
+            <h6 class="font-weight-bold">Power BI</h6>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/267_Python-512.webp" class="skill-image" style="height: 120px; width: auto;" alt="Power Query" />
+            </i>
+            <h6 class="font-weight-bold">Python</h6>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/Power-Query.png" class="skill-image" style="height: 150px; width: auto;" alt="Power Query" />
+            </i>
+          </div>
+          <div class="col-md-3 mb-4">
+            <i class="fa-4x mb-2">
+              <img src="img/vue.jpg" class="skill-image" style="height: 120px; width: auto;" alt="Power Query" />
+            </i>
           </div>
         </div>
       </div>
